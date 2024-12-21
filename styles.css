@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    width: 80%; /* Not taking the entire width */
+    margin: 0 auto; /* Centered */
+    padding: 20px 0;
+    position: relative;
+    background-color: #262626;
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Menu Styling */
+header .menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    padding-right: 40px;
+}
+
+header .menu li {
+    margin: 0 15px;
+}
+
+header .menu li a {
+    text-decoration: none;
+    color: #fff; /* White links */
+    font-weight: bold;
+}
+
+/* Hero Section Styling */
+.banner {
+    background-image: url('background.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* H1 Styling */
+.header-content h1 {
+    font-size: 48px; /* Correct font size */
+    color: #ffffff; /* White color */
+    margin-bottom: 20px;
+}
+
+/* Text under H1 */
+.header-content p {
+    font-size: 18px; /* Right font size */
+    color: #ccc; /* Light color */
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.register-btn {
+    background-color: #ec5990; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Button shadow */
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* More shadow for 3D effect */
+}
+
+/* H2 Styling */
+.header-content h2 {
+    font-size: 36px;
+    color: #ffffff; /* White color */
+    margin-top: 40px;
+    margin-bottom: 20px; /* Correct margin */
+}
+
+/* Student Highlights Section */
+.student-highlights {
+    display: flex;
+    justify-content: center; /* Center the block */
+    max-width: 80%; /* Not taking full width */
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.student {
+    margin: 0 20px; /* Spacing between students */
+    text-align: center;
+}
+
+/* Student Block Styling */
+.student img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Rounded image */
+    margin-bottom: 10px;
+}
+
+.student p {
+    margin: 5px 0;
+}
+
+.student p:first-of-type {
+    font-weight: bold; /* Bold for name */
+}
+
+.student p:last-of-type {
+    font-style: italic; /* Italic for subtitle */
+}
+
+/* Footer (if needed) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
