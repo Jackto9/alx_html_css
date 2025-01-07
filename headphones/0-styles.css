@@ -12,6 +12,7 @@
     --text-color: #FFFFFF;
     --font-family: 'Source Sans Pro', sans-serif;
     --hero-height: 100vh;
+    --max-width: 1000px;
 }
 
 /* General Styles */
@@ -32,6 +33,7 @@ body {
     height: var(--hero-height);
     position: relative;
     overflow: hidden;
+    padding: 20px;
 }
 
 .nav {
@@ -39,7 +41,9 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 50px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px 30px;
     position: absolute;
     top: 0;
     z-index: 10;
@@ -68,17 +72,19 @@ body {
 
 /* Hero Content */
 .hero-content {
-    max-width: 600px;
+    max-width: var(--max-width);
+    margin-top: 100px;
     z-index: 2;
+    text-align: center;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 30px;
 }
 
@@ -96,6 +102,7 @@ body {
     opacity: 0.9;
 }
 
+/* Hero Image */
 .hero-image {
     position: absolute;
     top: 0;
@@ -107,18 +114,15 @@ body {
     opacity: 0.8;
 }
 
-/* Mobile Navigation */
-.nav-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.nav-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-color);
+/* Hero Description */
+.hero-description {
+    max-width: var(--max-width);
+    margin-top: 20px;
+    z-index: 2;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 1.8;
 }
 
 /* Responsive Design */
@@ -128,7 +132,6 @@ body {
     }
 
     .nav-links {
-        display: none;
         flex-direction: column;
         background-color: var(--secondary-color);
         position: absolute;
@@ -136,7 +139,7 @@ body {
         right: 20px;
         width: 200px;
         border-radius: 5px;
-        text-align: center;
+        display: none;
     }
 
     .nav-links a {
@@ -148,20 +151,19 @@ body {
         border-bottom: none;
     }
 
-    .nav-toggle {
-        display: flex;
-    }
-
     .hero-content h1 {
         font-size: 2rem;
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
-}
 
-/* Show menu when active */
-.nav-links.active {
-    display: flex;
+    .hero-description {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
 }
